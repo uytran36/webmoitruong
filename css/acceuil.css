@@ -34,6 +34,9 @@ body{
     background-color: #A4D996;
     color:#000;
 }
+.fonctionextra{
+    display:none ;
+}
 
 /*FOOTER*/
 #footer{
@@ -52,9 +55,16 @@ body{
 .The-Red-House-Comic-5-hex { color: #F2F2F2; }
 */
 
-@media (min-width: 576px)
+@media screen and (max-width: 1100px)
 {
     .jumbotron {
         padding: 1rem 1rem;
     }   
+    #fonction{
+        display:none ;
+    }
+    .fonctionextra{
+        display:inline;
+    }
+    
 }
