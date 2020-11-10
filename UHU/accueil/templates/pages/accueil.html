@@ -1,0 +1,112 @@
+{% extends "pages/base.html" %}
+
+{% block title %}
+Accueil
+{% endblock %}
+{% load static %}
+{% block content %}
+<div class="jumbotron"  class="intro">
+    <h1 class="display-4">Bonjour à tous,</h1>
+    <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+    <hr class="my-4">
+    <div class="row">
+        <div class="col-md-4">
+            <img src="{% static 'image/tree.png' %}" class="card-img" alt="...">
+        </div>
+        <div class="col-md-8">     
+            <h5>Le but du web</h5>
+            <p>chưa biết ghi gì cho dài ra thành 1 đường thẳng</p>
+            <h5>Membre fondateur</h5>
+            <ul>
+                <li>Tran Khanh Gia Uy</li>
+                <li>Lương Long Ha</li>
+                <li>Phan Binh Duy Uyen</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<div class="row" id="fonction">
+    <div class="col-4" class="f1">
+        <div class="card border-success" >
+            <div class="card-header">Classification des arbres</div>
+            <div class="card-body text-success">
+                <h5 class="card-title">Explique</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="" class="btnclick">
+                    <button type="button" class="btn btn-outline-success">Cliquez</button>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-4" class="f2">
+        <div class="card border-success" >
+            <div class="card-header">Planifiez votre jardin</div>
+            <div class="card-body text-success">
+                <h5 class="card-title">Explique</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href=""  class="btnclick">
+                    <button type="button" class="btn btn-outline-success">Cliquez</button>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-4" class="f3">
+        <div class="card border-success" >
+            <div class="card-header">On ne sais pas</div>
+            <div class="card-body text-success">
+                <h5 class="card-title">Explique</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href=""  class="btnclick">
+                    <button type="button" class="btn btn-outline-success">Cliquez</button>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--EXTRA-->
+<div class="fonctionextra" >
+    <div class="f1">
+        <div class="card border-success" >
+            <div class="card-header">Classification des arbres</div>
+            <div class="card-body text-success">
+                <h5 class="card-title">Explique</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="" class="btnclick">
+                    <button type="button" class="btn btn-outline-success">Cliquez</button>
+                </a>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="f2">
+        <div class="card border-success" >
+            <div class="card-header">Planifiez votre jardin</div>
+            <div class="card-body text-success">
+                <h5 class="card-title">Explique</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href=""  class="btnclick">
+                    <button type="button" class="btn btn-outline-success">Cliquez</button>
+                </a>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="f3">
+        <div class="card border-success" >
+            <div class="card-header">On ne sais pas</div>
+            <div class="card-body text-success">
+                <h5 class="card-title">Explique</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href=""  class="btnclick">
+                    <button type="button" class="btn btn-outline-success">Cliquez</button>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

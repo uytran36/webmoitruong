@@ -1,0 +1,70 @@
+body{
+    background-color: #E3F2DC;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/*HEADER*/
+#header{
+    height: 250px;
+}
+.logo{
+    width: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.38em;
+    border: seagreen groove 5px;
+    border-radius: 6em;
+}
+.slogan{
+    text-align: center;
+    font-weight: bold;
+    font-size: x-large;
+    color:#F2785C;
+    text-transform: uppercase;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/*CONTENT*/
+.card-header{
+    font-size: x-large;
+    font-weight: bold;
+}
+.jumbotron{
+    background-color: #A4D996;
+    color:#000;
+}
+.fonctionextra{
+    display:none ;
+}
+
+/*FOOTER*/
+#footer{
+    color: #274001;
+    text-align: center;
+    height: 30px;
+    font-size: small;
+    background-color: #F2F2F2;
+}
+
+/* Color Theme Swatches in Hex 
+.The-Red-House-Comic-1-hex { color: #A4D996; }
+.The-Red-House-Comic-2-hex { color: #ADD9A0; }
+.The-Red-House-Comic-3-hex { color: #E3F2DC; }
+.The-Red-House-Comic-4-hex { color: #F2785C; }
+.The-Red-House-Comic-5-hex { color: #F2F2F2; }
+*/
+
+@media screen and (max-width: 1100px)
+{
+    .jumbotron {
+        padding: 1rem 1rem;
+    }   
+    #fonction{
+        display:none ;
+    }
+    .fonctionextra{
+        display:inline;
+    }
+    
+}
