@@ -1,0 +1,203 @@
+[
+    {
+        "id": "1",
+        "name": "caféier",
+        "soil_type": "sol rouge Basalte",
+        "family": "Rubiaceae",
+        "height": "8m",
+        "water": "180 litre/mois",
+        "size": "1 m",
+        "price": "6000 VND"
+    },
+    {
+        "id": "2",
+        "name": "théier",
+        "soil_type": "terre de boue",
+        "family": "Theaceae",
+        "height": "2m",
+        "water": "600 litre/mois",
+        "size": "0.5m",
+        "price": "25000 VND"
+    },
+    {
+        "id": "3",
+        "name": "jacquier",
+        "soil_type": "sol rouge Basalte",
+        "family": "Moraceae",
+        "height": "15m",
+        "water": "300 litre/mois",
+        "size": "5m",
+        "price": "30000 VND"
+    },
+    {
+        "id": "4",
+        "name": "caoutchouc",
+        "soil_type": "sol rouge Basalte",
+        "family": "Euphorbiaceae",
+        "height": "30m",
+        "water": "250 litre/mois",
+        "size": "4m",
+        "price": "8000 VND"
+    },
+    {
+        "id": "5",
+        "name": "durian",
+        "soil_type": "terre d'Alluvion",
+        "family": "Malvaceae",
+        "height": "32m",
+        "water": "220 litre/mois",
+        "size": "6m",
+        "price": "70000 VND"
+    },
+    {
+        "id": "6",
+        "name": "longane",
+        "soil_type": "terre d'Alluvion",
+        "family": "Sapindaceae",
+        "height": "6m",
+        "water": "170 litre/mois",
+        "size": "1.5m",
+        "price": "40000 VND"
+    },
+    {
+        "id": "7",
+        "name": "litchi",
+        "soil_type": "terre d'Alluvion",
+        "family": "Sapindaceae",
+        "height": "12m",
+        "water": "150 litre/mois",
+        "size": "1.5m",
+        "price": "40000 VND"
+    },
+    {
+        "id": "8",
+        "name": "oseille",
+        "soil_type": "terre d'humus",
+        "family": "Fabaceae",
+        "height": "20m",
+        "water": "195 litre/mois",
+        "size": "1m",
+        "price": "35000 VND"
+    },
+    {
+        "id": "9",
+        "name": "vigne",
+        "soil_type": "terre d'Alluvion",
+        "family": "Vitaceae",
+        "height": "2m",
+        "water": "270 litre/mois",
+        "size": "1m",
+        "price": "20000 VND"
+    },
+    {
+        "id": "10",
+        "name": "bananier",
+        "soil_type": "terre d'humus",
+        "family": "Musaceae",
+        "height": "2.3m",
+        "water": "254 litre/mois",
+        "size": "0.7m",
+        "price": "10000 VND"
+    },
+    {
+        
+        "id": "11",
+        "name": "manioc",
+        "soil_type": "terre d'humus",
+        "family": "Euphorbiaceae",
+        "height": "3m",
+        "water": "170 litre/mois",
+        "size": "1.2m",
+        "price": "25000 VND"
+    },
+    {
+        "id": "12",
+        "name": "goyave",
+        "soil_type": "terre d'Alluvion",
+        "family": "Myrtaceae",
+        "height": "7m",
+        "water": "300 litre/mois",
+        "size": "3m",
+        "price": "30000 VND"
+    },
+    {
+        "id": "13",
+        "name": "citrouille",
+        "soil_type": "terre d'Alluvion",
+        "family": "Cucurbitaceae",
+        "height": "0.3m",
+        "water": "180 litre/mois",
+        "size": "3m",
+        "price": "20000 VND"
+    },
+    {
+        "id": "14",
+        "name": "fraises",
+        "soil_type": "terre d'humus",
+        "family": "Rosaceae",
+        "height": "0.6m",
+        "water": "97 litre/mois",
+        "size": "0.3m",
+        "price": "70000 VND"
+    },
+    {
+        "id": "15",
+        "name": "poirier",
+        "soil_type": "terre d'Alluvion",
+        "family": "Rosaceae",
+        "height": "12m",
+        "water": "200 litre/mois",
+        "size": "5m",
+        "price": "140000 VND"
+    },
+    {
+        "id": "16",
+        "name": "dragon",
+        "soil_type": "sol rouge Basalte",
+        "family": "Cactaceae",
+        "height": "2.5m",
+        "water": "250 litre/mois",
+        "size": "3.5m",
+        "price": "25000 VND"
+    },
+    {
+        "id": "17",
+        "name": "palmier dattier",
+        "soil_type": "sol de gravier",
+        "family": "Arecaceae",
+        "height": "15m",
+        "water": "160 litre/mois",
+        "size": "10m",
+        "price": "50000 VND"
+    },
+    {
+        "id": "18",
+        "name": "ananas",
+        "soil_type": "sol rouge Basalte",
+        "family": "Bromeliaceae",
+        "height": "0.3m",
+        "water": "180 litre/mois",
+        "size": "3m",
+        "price": "30000 VND"
+    },
+    {
+        "id": "19",
+        "name": "armoise",
+        "soil_type": "sol rouge Basalte",
+        "family": "Asteraceae",
+        "height": "0.5m",
+        "water": "90 litre/mois",
+        "size": "1m",
+        "price": "5000 VND"
+    },
+    {
+        "id": "20",
+        "name": "piment",
+        "soil_type": "terre d'Alluvion",
+        "family": "Solanaceae",
+        "height": "0.5m",
+        "water": "80 litre/mois",
+        "size": "1m",
+        "price": "2000 VND"
+    }
+]
