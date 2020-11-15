@@ -5,8 +5,16 @@ Fonction 1
 {% endblock %}
 {% load static %}
 <link rel="stylesheet" href="{% static 'my_css/fonction1.css' %}" type="text/css">
+<script src="{% static 'my_js/fonc1.js' %}"></script>
 {% block content %}
+<div id="search">
+    <input type="search" name="" id="">
+    <button id="button" type="submit">SUBMIT</button>
+</div>
 
+<br>
 
+<div class="row" id="row"></div>
 
 {% endblock %}
+

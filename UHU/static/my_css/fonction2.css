@@ -1,0 +1,11 @@
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#search{
+    width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
