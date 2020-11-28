@@ -11,3 +11,21 @@ body{
     margin-right: auto;
     
 }
+
+#content {
+    border: 1px solid black;
+    background-color: blanchedalmond;
+    border-radius: 30px;
+    padding: 1% 3%;
+}
+
+.wrap-function-button {
+    padding-top: 1%;
+    text-align: center;
+}
+
+#footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
