@@ -3,19 +3,118 @@
 {% block title %}
 Fonction 1
 {% endblock %}
+
+{% block css %}
 {% load static %}
 <link rel="stylesheet" href="{% static 'my_css/fonction1.css' %}" type="text/css">
-<script src="{% static 'my_js/fonc1.js' %}"></script>
-{% block content %}
-<div id="search">
-    <input type="search" name="" id="">
-    <button id="button" type="submit">SUBMIT</button>
-    
-</div>
-
-<br>
-
-<div class="row" id="row"></div>
-
 {% endblock %}
 
+{% block content %}
+<form action="result">
+    <div class="container" id="wrap-checkbox">
+    {% for item in data %}
+    <div class="wrap-item">
+        <input type="checkbox" class="form-check-input" id="{{ item.name }}">
+        <label class="form-check-label" for="{{ item.name }}">{{ item.name }}</label>
+    </div>
+        {% endfor %}
+        <!-- <div class="row">
+            <div class="col">
+                <input type="checkbox" class="form-check-input" id="1">
+                <label class="form-check-label" for="1">caféier</label>
+            </div>
+            <div class="col">
+                <input type="checkbox" class="form-check-input" id="2">
+                <label class="form-check-label" for="2">théier</label>
+            </div>
+            <div class="col">
+                <input type="checkbox" class="form-check-input" id="3">
+                <label class="form-check-label" for="3">jacquier</label>
+            </div>
+            <div class="col">
+                <input type="checkbox" class="form-check-input" id="4">
+                <label class="form-check-label" for="4">caoutchouc</label>
+            </div>
+            <div class="col">
+                <input type="checkbox" class="form-check-input" id="5">
+                <label class="form-check-label" for="5">durian</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <input type="checkbox" class="form-check-input" id="6">
+                <label class="form-check-label" for="6">longane</label>
+            </div>
+            <div class="col">
+                <input type="checkbox" class="form-check-input" id="7">
+                <label class="form-check-label" for="7">litchi</label>
+            </div>
+            <div class="col">
+                <input type="checkbox" class="form-check-input" id="8">
+                <label class="form-check-label" for="8">oseille</label>
+            </div>
+            <div class="col">
+                <input type="checkbox" class="form-check-input" id="9">
+                <label class="form-check-label" for="9">vigne</label>
+            </div>
+            <div class="col">
+                <input type="checkbox" class="form-check-input" id="10">
+                <label class="form-check-label" for="10">bananier</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <input type="checkbox" class="form-check-input" id="11">
+                <label class="form-check-label" for="11">manioc</label>
+            </div>
+            <div class="col">
+                <input type="checkbox" class="form-check-input" id="12">
+                <label class="form-check-label" for="12">goyave</label>
+            </div>
+            <div class="col">
+                <input type="checkbox" class="form-check-input" id="13">
+                <label class="form-check-label" for="13">citrouille</label>
+            </div>
+            <div class="col">
+                <input type="checkbox" class="form-check-input" id="14">
+                <label class="form-check-label" for="14">fraises</label>
+            </div>
+            <div class="col">
+                <input type="checkbox" class="form-check-input" id="15">
+                <label class="form-check-label" for="15">poirier</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <input type="checkbox" class="form-check-input" id="16">
+                <label class="form-check-label" for="16">dragon</label>
+            </div>
+            <div class="col">
+                <input type="checkbox" class="form-check-input" id="17">
+                <label class="form-check-label" for="17">palmier dattier</label>
+            </div>
+            <div class="col">
+                <input type="checkbox" class="form-check-input" id="18">
+                <label class="form-check-label" for="18">ananas</label>
+            </div>
+            <div class="col">
+                <input type="checkbox" class="form-check-input" id="19">
+                <label class="form-check-label" for="19">armoise</label>
+            </div>
+            <div class="col">
+                <input type="checkbox" class="form-check-input" id="20">
+                <label class="form-check-label" for="20">piment</label>
+            </div>
+        </div>
+    </div> -->
+    <div class="wrap-function-button">
+        <input type="submit" class="btn btn-success" id="btn-submid" value="Submid">
+        <button type="button" class="btn btn-dark" id="btn-clear" onclick="clearFunc()">Clear all</button>
+    </div>
+</form>
+{% endblock %}
+
+{% block js %}
+{% load static %}
+<script src="{% static 'my_js/fonc1.js' %}"></script>
+{% endblock %}

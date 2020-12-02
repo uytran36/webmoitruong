@@ -79,8 +79,11 @@ WSGI_APPLICATION = 'UHU.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'djongo',
+        'NAME': 'UHU',
+        'HOST': 'mongodb+srv://uytran:uy12081999@uhu.htjgv.mongodb.net/test',
+        'USER': 'uytran',
+        'PASSWORD': 'uy12081999'
     }
 }
 

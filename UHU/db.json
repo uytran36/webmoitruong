@@ -1,16 +1,16 @@
 [
     {
-        "id": "1",
+        "_id": "1",
         "name": "caféier",
         "soil_type": "sol rouge Basalte",
         "family": "Rubiaceae",
         "height": "8m",
         "water": "180 litre/mois",
-        "size": "1 m",
+        "size": "1m",
         "price": "6000 VND"
     },
     {
-        "id": "2",
+        "_id": "2",
         "name": "théier",
         "soil_type": "terre de boue",
         "family": "Theaceae",
@@ -20,7 +20,7 @@
         "price": "25000 VND"
     },
     {
-        "id": "3",
+        "_id": "3",
         "name": "jacquier",
         "soil_type": "sol rouge Basalte",
         "family": "Moraceae",
@@ -30,7 +30,7 @@
         "price": "30000 VND"
     },
     {
-        "id": "4",
+        "_id": "4",
         "name": "caoutchouc",
         "soil_type": "sol rouge Basalte",
         "family": "Euphorbiaceae",
@@ -40,7 +40,7 @@
         "price": "8000 VND"
     },
     {
-        "id": "5",
+        "_id": "5",
         "name": "durian",
         "soil_type": "terre d'Alluvion",
         "family": "Malvaceae",
@@ -50,7 +50,7 @@
         "price": "70000 VND"
     },
     {
-        "id": "6",
+        "_id": "6",
         "name": "longane",
         "soil_type": "terre d'Alluvion",
         "family": "Sapindaceae",
@@ -60,7 +60,7 @@
         "price": "40000 VND"
     },
     {
-        "id": "7",
+        "_id": "7",
         "name": "litchi",
         "soil_type": "terre d'Alluvion",
         "family": "Sapindaceae",
@@ -70,7 +70,7 @@
         "price": "40000 VND"
     },
     {
-        "id": "8",
+        "_id": "8",
         "name": "oseille",
         "soil_type": "terre d'humus",
         "family": "Fabaceae",
@@ -80,7 +80,7 @@
         "price": "35000 VND"
     },
     {
-        "id": "9",
+        "_id": "9",
         "name": "vigne",
         "soil_type": "terre d'Alluvion",
         "family": "Vitaceae",
@@ -90,7 +90,7 @@
         "price": "20000 VND"
     },
     {
-        "id": "10",
+        "_id": "10",
         "name": "bananier",
         "soil_type": "terre d'humus",
         "family": "Musaceae",
@@ -101,7 +101,7 @@
     },
     {
         
-        "id": "11",
+        "_id": "11",
         "name": "manioc",
         "soil_type": "terre d'humus",
         "family": "Euphorbiaceae",
@@ -111,7 +111,7 @@
         "price": "25000 VND"
     },
     {
-        "id": "12",
+        "_id": "12",
         "name": "goyave",
         "soil_type": "terre d'Alluvion",
         "family": "Myrtaceae",
@@ -121,7 +121,7 @@
         "price": "30000 VND"
     },
     {
-        "id": "13",
+        "_id": "13",
         "name": "citrouille",
         "soil_type": "terre d'Alluvion",
         "family": "Cucurbitaceae",
@@ -131,7 +131,7 @@
         "price": "20000 VND"
     },
     {
-        "id": "14",
+        "_id": "14",
         "name": "fraises",
         "soil_type": "terre d'humus",
         "family": "Rosaceae",
@@ -141,7 +141,7 @@
         "price": "70000 VND"
     },
     {
-        "id": "15",
+        "_id": "15",
         "name": "poirier",
         "soil_type": "terre d'Alluvion",
         "family": "Rosaceae",
@@ -151,7 +151,7 @@
         "price": "140000 VND"
     },
     {
-        "id": "16",
+        "_id": "16",
         "name": "dragon",
         "soil_type": "sol rouge Basalte",
         "family": "Cactaceae",
@@ -161,7 +161,7 @@
         "price": "25000 VND"
     },
     {
-        "id": "17",
+        "_id": "17",
         "name": "palmier dattier",
         "soil_type": "sol de gravier",
         "family": "Arecaceae",
@@ -171,7 +171,7 @@
         "price": "50000 VND"
     },
     {
-        "id": "18",
+        "_id": "18",
         "name": "ananas",
         "soil_type": "sol rouge Basalte",
         "family": "Bromeliaceae",
@@ -181,7 +181,7 @@
         "price": "30000 VND"
     },
     {
-        "id": "19",
+        "_id": "19",
         "name": "armoise",
         "soil_type": "sol rouge Basalte",
         "family": "Asteraceae",
@@ -191,7 +191,7 @@
         "price": "5000 VND"
     },
     {
-        "id": "20",
+        "_id": "20",
         "name": "piment",
         "soil_type": "terre d'Alluvion",
         "family": "Solanaceae",
