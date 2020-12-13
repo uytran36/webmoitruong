@@ -4,8 +4,43 @@
 Fonction 1 result
 {% endblock %}
 
+{% block css %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'my_css/result.css' %}" type="text/css">
+{% endblock %}
+
 {% block content %}
-
-
+<form method="POST">
+    {% csrf_token %}
+    <div class="container">
+        {% for bed in list_bed %}
+        <div class="box">
+            <div class="icon">{{ forloop.counter }}</div>
+            <div class="content">
+                <div class="wrap-tree">
+                    <div class="tree">
+                        {% for tree in bed %}
+                        <p>{{ tree.name }}</p>
+                        {% endfor %}
+                    </div>
+                </div>
+                <div class="wrap-area">
+                    <div class="wrapper">
+                        <div class="input-data">
+                            <input type="text" name="area">
+                            <div class="underline"></div>
+                        </div>
+                        <label>Area: (in hectare)</label>
+                    </div>
+                </div>
+                <div class="wrap-function-button">
+                    <input type="hidden" name="next" value="/fonction2/result1">
+                    <input type="submit" class="btn btn-success" id="btn-submid" value="Calculer">
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</form>
 
 {% endblock %}

@@ -7,23 +7,39 @@
     <!--CSS-->
     {% block css %}{% endblock %}
     {% load static %}
+    <link rel="icon" href="{% static 'image/icon.jpg' %}" type="image/gif" sizes="16x16">
     <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" type="text/css">
     <link rel="stylesheet" href="{% static 'my_css/accueil.css' %}" type="text/css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
     
 </head>
 <body>
     <!--HEADER-->
-    <div id="header">
-      <div>
-          <a href="">
-            <img src="{% static 'image/Layer 0.png' %}" alt="logo" class="logo">
-          </a>
-      </div>
-      <div>
-          <p class="slogan" >Soyez le maître de votre jardin</p>
-      </div>
+    <div class="navbar">
+        <div class="wrap-logo">
+            <a href="{% url 'accueil' %}">
+                <img src="{% static 'image/Layer 0.png' %}" alt="logo" class="logo">
+            </a>
+            <div class="wrap-slogan">
+                <p class="slogan" >Soyez le maître de votre jardin</p>
+            </div>
+        </div>
+        <div class="wrap-fonction">
+            <div class="wrap-button">
+                <a href="{% url 'propos' %}" class="nav-button">À propos!</a>
+            </div>
+            <div class="wrap-button">
+                <a href="{% url 'fonction1' %}" class="nav-button">Fonction 1</a>
+            </div>
+            <div class="wrap-button">
+                <a href="{% url 'fonction2' %}" class="nav-button">Fonction 2</a>
+            </div>
+            <div class="wrap-button">
+                <a href="{% url 'fonction3' %}" class="nav-button">Fonction 3</a>
+            </div>
+        </div>
     </div>
-    <br>
 
     <!--CONTENT-->
     <div class="container-fluid" id="content">

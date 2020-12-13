@@ -1,0 +1,48 @@
+.container {
+    padding-top: 5%;
+}
+
+.box {
+    margin-top: 10%;
+    width: 800px;
+    background-color: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .1);
+    border-radius: 20px;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    margin: auto auto;    
+    font-size: 5vh;
+}
+
+.title  {
+    font-weight: 900;
+    text-transform: uppercase;
+    background-color: #04D98B;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 10px;
+}
+
+.wrap-tree {
+    display: block;
+    padding-top: 20px;
+}
+
+.price {
+    color: #04a76b;
+    padding: 10px;
+    font-weight: 900;
+}
+
+.price p {
+    margin: auto auto;
+    border-top: 1px solid gray;
+    width: 90%;
+}
+
+#footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}

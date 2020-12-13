@@ -3,10 +3,50 @@
 {% block title %}
 Fonction 2
 {% endblock %}
+
+{% block css %}
 {% load static %}
 <link rel="stylesheet" href="{% static 'my_css/fonction2.css' %}" type="text/css">
+{% endblock %}
+
 {% block content %}
+<form action="result1" method="POST">
+    {% csrf_token %}
+    <div class="container">
+        <div id="wrap-checkbox">
+            {% for item in data %}
+            <div class="wrap-item">
+                <div class="check-box">
+                    <label class="custom-checkbox">
+                        <input type="checkbox" class="form-check-input" name="{{ item.name }}">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+                <div class="wrap-name-tree">
+                    <label class="form-check-label" for="{{ item.name }}">{{ item.name }}</label>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        <div class="wrap-area">
+            <div class="wrapper">
+                <div class="input-data">
+                    <input type="text" name="area" required>
+                    <div class="underline"/>
+                </div>
+                <label>Area: (in hectare)</label>
+            </div>
+        </div>
 
+        <div class="wrap-function-button">
+            <input type="submit" class="btn btn-success" id="btn-submid" value="Submid">
+            <button type="button" class="btn btn-dark" id="btn-clear" onclick="clearFunc()">Clear all</button>
+        </div>
+    </div> 
+</form>
+{% endblock %}
 
-
+{% block js %}
+{% load static %}
+<script src="{% static 'my_js/fonc1.js' %}"></script>
 {% endblock %}

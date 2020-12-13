@@ -12,7 +12,7 @@
     {
         "_id": "2",
         "name": "théier",
-        "soil_type": "terre de boue",
+        "soil_type": "sol rouge Basalte",
         "family": "Theaceae",
         "height": "2m",
         "water": "600 litre/mois",

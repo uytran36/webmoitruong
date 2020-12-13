@@ -1,27 +1,27 @@
 var form = document.getElementById("content")
 form.onclick = changeHandler;
 
-function changeHandler(evt) {
-    var count = 0;
-    var list_checkboxes = document.getElementsByClassName("form-check-input");
-    for(var i = 0; i < list_checkboxes.length; i++) {
-        var check_array = [];
-        if(list_checkboxes[i].checked == true) {
-            count++;
-            check_array.push(i);
-        }
-    }
+// function changeHandler(evt) {
+//     var count = 0;
+//     var list_checkboxes = document.getElementsByClassName("form-check-input");
+//     for(var i = 0; i < list_checkboxes.length; i++) {
+//         var check_array = [];
+//         if(list_checkboxes[i].checked == true) {
+//             count++;
+//             check_array.push(i);
+//         }
+//     }
 
-    if(count === 5) {
-        for(var j = 0; j < list_checkboxes.length; j++) {
-            var k = 0;
-            if(j != check_array[k++]) {
-                list_checkboxes[j].disabled = true;
-            }
+//     if(count === 5) {
+//         for(var j = 0; j < list_checkboxes.length; j++) {
+//             var k = 0;
+//             if(j != check_array[k++]) {
+//                 list_checkboxes[j].disabled = true;
+//             }
             
-        }
-    }    
-}
+//         }
+//     }    
+// }
 
 
 function clearFunc() {
