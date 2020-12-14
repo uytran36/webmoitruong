@@ -16,11 +16,11 @@ Fonction 1 result
         {% for bed in list_bed %}
         <div class="box">
             <div class="icon">{{ forloop.counter }}</div>
-            <div class="content">
+            <div class="content" id="{{ forloop.counter }}">
                 <div class="wrap-tree">
                     <div class="tree">
                         {% for tree in bed %}
-                        <p>{{ tree.name }}</p>
+                        <p id="{{ tree.name }}">{{ tree.name }}</p>
                         {% endfor %}
                     </div>
                 </div>

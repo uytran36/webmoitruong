@@ -34,6 +34,7 @@ def result(request):
     list_bed = []
     for item in list_item:
         bed = []
+        bed.append(item)
 
         def check(tree1, tree2):
             flag_soil = False
@@ -63,12 +64,38 @@ def result(request):
         for item2 in list_item:
             if(check(item, item2)):
                 bed.append(item2)
-        if len(bed) == 0:
+
+        if len(bed) == 1:
             list_bed.append([item])
-            
         else: 
             list_bed.append(bed)
+    
+    list_id = []
+    for item in list_bed:
+        _id = []
+        for j in range(len(item)):
+            _id.append(int(item[j]['_id']))
+        _id.sort()
+        list_id.append(_id)
+
+    for i in range(len(list_id) - 1):
+        for j in range(i + 1, len(list_id)):
+            if(list_id[i] == list_id[j]):
+                del list_id[j]
+                del list_bed[j]
+                break
     return render(request, 'pages/result.html', {'list_bed':list_bed})
 
+# def plus(request):
+#     myclient = pymongo.MongoClient("mongodb://localhost:27017/")
+#     mydb = myclient["UHU"]
+#     mycol = mydb["Tree"]
+#     data = mycol.find({})
+    
+#     list_item = []
+#     for item in data:
+#         temp = request.POST()
+        
+#     area = float(request.POST['area']) * 10000
 
-#clear button
+#     return render(request, 'pages/result1.html', {'list_item':list_item, 'list_tree':list_tree, 'cost':cost})

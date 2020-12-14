@@ -10,5 +10,22 @@ Fonction 2 result
 {% endblock %}
 
 {% block content %}
+<div class="container">
+    <div class="box">
+        <div class="title">Votre Jardin</div>
+        <div class="wrap-tree">
+            <div class="tree">
+                {% for key, value in list_tree.items %}
+                <p>Nombre d'arbres {{ key }}: {{ value }}</p>
+                {% endfor %}
+            </div>
+        </div>
+        <div class="price">
+            <p>Prix total: {{ cost }} VND</p>
+        </div>         
+       
+    </div>
+</div>
+
 
 {% endblock %}
