@@ -10,17 +10,18 @@ Fonction 1 result
 {% endblock %}
 
 {% block content %}
-<form method="POST">
+<div class="container">
+    {% for bed in list_bed %}
+    <form action="plus" method="POST">
     {% csrf_token %}
-    <div class="container">
-        {% for bed in list_bed %}
         <div class="box">
             <div class="icon">{{ forloop.counter }}</div>
             <div class="content" id="{{ forloop.counter }}">
                 <div class="wrap-tree">
                     <div class="tree">
                         {% for tree in bed %}
-                        <p id="{{ tree.name }}">{{ tree.name }}</p>
+                        <input type="hidden" name="{{ tree.name }}" value="{{ tree.name }}">
+                        <p id="name-tree">{{ tree.name }}</p>
                         {% endfor %}
                     </div>
                 </div>
@@ -34,13 +35,13 @@ Fonction 1 result
                     </div>
                 </div>
                 <div class="wrap-function-button">
-                    <input type="hidden" name="next" value="/fonction2/result1">
                     <input type="submit" class="btn btn-success" id="btn-submid" value="Calculer">
                 </div>
             </div>
         </div>
-        {% endfor %}
-    </div>
-</form>
+    </form>
+    {% endfor %}
+</div>
+
 
 {% endblock %}

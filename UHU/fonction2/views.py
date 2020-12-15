@@ -7,6 +7,7 @@ def fonction2(request):
     mydb = myclient["UHU"]
     mycol = mydb["Tree"]
     data = mycol.find({})
+    
     return render(request, 'pages/fonction2.html', {'data':data})
 
 def result1(request):
@@ -25,7 +26,6 @@ def result1(request):
 
     list_tree = {}
     cost = 0
-
 
     sum_area = 0
     for item in list_item:
