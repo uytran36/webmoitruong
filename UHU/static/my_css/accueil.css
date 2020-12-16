@@ -6,7 +6,7 @@ body{
 /*HEADER*/
 .navbar {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 60% 40%;
     column-gap: 0px;
 }
 
@@ -37,7 +37,7 @@ body{
 
 .wrap-fonction {
     display: grid;
-    grid-template-columns: 25% 25% 25% auto;
+    grid-template-columns: 33% 33% 34%;
 }
 
 .wrap-button {
@@ -95,6 +95,7 @@ body{
 }
 
 /*CONTENT*/
+
 .card-header {
     font-size: x-large;
     font-weight: bold;
@@ -102,7 +103,7 @@ body{
 
 .jumbotron {
     background-color: #A4D996;
-    color:#000;
+    color: #50362b;
     font-family: 'Nunito', sans-serif;
     display: grid;
     grid-template-columns: 50% 50%;
@@ -134,7 +135,7 @@ body{
 
 .intro-text {
     text-align: center;
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     font-size: 2.5vh;
 }
@@ -156,9 +157,9 @@ body{
 
 .wrap-advantage p {
     display: block;
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: bold;
-    font-size: 2.5vh;
+    font-size: 25px;
 }
 
 .advantage1 {
@@ -176,17 +177,17 @@ body{
 
 .advantage2 {
     display: grid;
-    grid-template-columns: 60% 40%;
+    grid-template-columns: 65% 35%;
 }
 
 .advantage2 img {
-    margin-right: 75%;
+    
 }
 
 .advantage2 p {
     margin-top: auto;
     margin-bottom: auto;
-    margin-left: 62%;
+    margin-left: 60%;
 }
 
 .advantage3 {

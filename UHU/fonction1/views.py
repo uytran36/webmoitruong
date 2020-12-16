@@ -156,4 +156,5 @@ def plus(request):
             price = int(temp[0])
             cost += price * number_tree
 
+    cost = '{:,.0f}'.format(cost)
     return render(request, 'pages/plus.html', {'list_item':list_item, 'list_tree':list_tree, 'cost':cost})

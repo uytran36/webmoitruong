@@ -5,18 +5,24 @@ Fonction 3
 {% endblock %}
 
 {% block css %}
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
 {% load static %}
 <link rel="stylesheet" href="{% static 'my_css/fonction3.css' %}" type="text/css">
 {% endblock %}
 
 {% block content %}
 <div class="container">
+    <div class="wrap-sum-tree">
+        <p>Nous avons planté</p>
+        <p id="sum-tree">{{ sum_tree }}</p>
+    </div>
     <div class="wrap-form">
         <form action="thanks" method="POST">
         {% csrf_token %}
             <div class="wrap-number">
                 <p>1$ plante un arbre</p>
-                <input type="text" class="input-text" name="number-tree" placeholder="Your amount">
+                <input type="text" class="input-text" name="number-tree" required placeholder="Your amount">
             </div>
             <div class="wrap-detail">
                 <div class="title">
@@ -25,18 +31,18 @@ Fonction 3
                 <div class="form-detail">
                     <div class="name">
                         <p>Nom:</p>
-                        <input type="text" class="input-text" name="name" placeholder="Nom">
+                        <input type="text" class="input-text" name="name" required placeholder="Nom">
                     </div>
                     <div class="email">
                         <p>Email:</p>
-                        <input type="text" class="input-text" name="email" placeholder="Email">
+                        <input type="text" class="input-text" name="email" required placeholder="Email">
                     </div>
                     <div class="mobile-phone">
                         <p>Téléphone:</p>
-                        <input type="text" class="input-text" name="mobile-phone" placeholder="Téléphone">
+                        <input type="text" class="input-text" name="mobile-phone" required placeholder="Téléphone">
                     </div>
                     <div class="message">
-                        <p>Message:</p>
+                        <p>Message (optionnel):</p>
                         <textarea name="message" cols="30" rows="10" placeholder="Message"></textarea>
                     </div>
                     <div class="payment">
@@ -44,19 +50,19 @@ Fonction 3
                     </div>
                     <div class="name-card">
                         <p>Nom du titulaire:</p>
-                        <input type="text" class="input-text" name="name-card" placeholder="Nom du titulaire">
+                        <input type="text" class="input-text" name="name-card" required placeholder="Nom du titulaire">
                     </div>
                     <div class="expiration-date">
                         <p>Date d'expiration:</p>
-                        <input type="text" class="input-text" name="expiration-date" placeholder="Date d'expiration">
+                        <input type="text" class="input-text" name="expiration-date" required placeholder="Date d'expiration">
                     </div>
                     <div class="security-code">
                         <p>Code de sécurité:</p>
-                        <input type="text" class="input-text" name="security-code" placeholder="Code de sécurité">
+                        <input type="text" class="input-text" name="security-code" required placeholder="Code de sécurité">
                     </div>
                     <div class="postal-code">
                         <p>Code postal:</p>
-                        <input type="text" class="input-text" name="postal-code" placeholder="Code postal">
+                        <input type="text" class="input-text" name="postal-code" required placeholder="Code postal">
                     </div>
                     <div class="country">
                         <p>Pays</p>
@@ -319,15 +325,24 @@ Fonction 3
             <p>Leaderboard</p>
         </div>
         {% for item in list_donators %}
-        <div class="wrap-donator">
-            <div class="wrap-name">
-                <p>{{ item.name }}</p>
+        <div class="wrap-donator" id="donator-{{forloop.counter}}">
+            <div class="wrap-image">
+                <img src="{% static 'image/earth.svg' %}">
             </div>
-            <div class="wrap-message">
-                <p>{{ item.message }}</p>
-            </div>
-            <div class="wrap-num-tree">
-                <p>{{ item.number_tree }} trees</p>
+            <div class="wrap-content">
+                <div class="info">
+                    <div class="wrap-name">
+                        <p>{{ item.name }}</p>
+                    </div>
+                    <img src="{% static 'image/cloud.png' %}" id="cloud">
+                    <div class="wrap-message">
+                        <p>{{ item.message }}</p>
+                    </div>
+                    <img src="{% static 'image/leaf.png' %}" id="leaf">
+                </div>
+                <div class="wrap-num-tree">
+                    <p>{{ item.number_tree }} trees</p>
+                </div>
             </div>
         </div>
         {% endfor %}

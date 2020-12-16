@@ -9,12 +9,16 @@ def fonction3(request):
     data = mycol.find({})
 
     list_donators = []
-    
+    sum_tree = 0
     for item in data:
+        item['number_tree'] = int(item['number_tree'])
         list_donators.append(item)
-        
-    print(list_donators)
-    return render(request, 'pages/fonction3.html', {'list_donators':list_donators})
+        sum_tree += item['number_tree']
+    
+    list_donators = sorted(list_donators, key = lambda i: i['number_tree'], reverse=True)
+    
+    sum_tree = '{:,.0f}'.format(sum_tree)
+    return render(request, 'pages/fonction3.html', {'list_donators':list_donators, 'sum_tree': sum_tree})
 
 def thanks(request):
     myclient = pymongo.MongoClient("mongodb://localhost:27017/")
@@ -51,6 +55,5 @@ def thanks(request):
     donator['country'] = country
 
     temp = mycol.insert_one(donator)
-    
     
     return render(request, 'pages/thanks.html')

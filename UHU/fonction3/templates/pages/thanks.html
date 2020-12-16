@@ -3,12 +3,27 @@
 {% block title %}
 Thank you
 {% endblock %}
+
+{% block css %}
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
 {% load static %}
-<link rel="stylesheet" href="{% static 'my_css/fonction3.css' %}" type="text/css">
+<link rel="stylesheet" href="{% static 'my_css/thanks.css' %}" type="text/css">
+{% endblock %}
 {% block content %}
 
 <div class="container">
-   
+   <div class="wrap-content">
+       <div class="quote">
+            Merci pour votre don!
+       </div>
+       <div class="wrap-image">
+           <img src="{% static 'image/noti.png' %}" alt="">
+       </div>
+       <div class="noti">
+            Nous avons votre don et notre équipe est là-dessus.
+       </div>
+   </div>
 </div>
 
 {% endblock %}
