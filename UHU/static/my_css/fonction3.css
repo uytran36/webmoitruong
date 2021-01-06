@@ -89,7 +89,7 @@
     margin-bottom: 25px;
 }
 
-.wrap-leaderboard {
+.wrap-leaderboard .wrap-message{
     font-family: 'Nunito', sans-serif;
 }
 
@@ -197,7 +197,7 @@
     width: 50px;
 }
 #donator-1 .wrap-name {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif !important;
     padding-top: 40px;
     font-size: 30px;
 }

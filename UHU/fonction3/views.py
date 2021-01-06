@@ -1,6 +1,26 @@
 from django.shortcuts import render
 import pymongo
 
+def partition(arr, low, high):
+    i = (low-1)         # index of smaller element
+    pivot = arr[high]['number_tree']     # pivot
+
+    for j in range(low, high):
+        if arr[j]['number_tree'] >= pivot:
+            i = i+1
+            arr[i], arr[j] = arr[j], arr[i]
+ 
+    arr[i+1], arr[high] = arr[high], arr[i+1]
+    return (i+1)
+ 
+def quickSort(arr, low, high):
+    if len(arr) == 1:
+        return arr
+    if low < high:
+        pi = partition(arr, low, high)
+        quickSort(arr, low, pi-1)
+        quickSort(arr, pi+1, high)
+ 
 # Create your views here.
 def fonction3(request):
     myclient = pymongo.MongoClient("mongodb://localhost:27017/")
@@ -15,8 +35,8 @@ def fonction3(request):
         list_donators.append(item)
         sum_tree += item['number_tree']
     
-    list_donators = sorted(list_donators, key = lambda i: i['number_tree'], reverse=True)
-    
+    quickSort(list_donators, 0, len(list_donators) - 1)
+
     sum_tree = '{:,.0f}'.format(sum_tree)
     return render(request, 'pages/fonction3.html', {'list_donators':list_donators, 'sum_tree': sum_tree})
 
