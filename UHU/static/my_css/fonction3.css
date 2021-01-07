@@ -142,6 +142,7 @@
     font-family: 'Montserrat', sans-serif;
     padding-top: 20px;
     margin-left: 20px;
+    font-weight: 900;
     margin-bottom: 0;
 }
 
@@ -200,6 +201,7 @@
     font-family: 'Montserrat', sans-serif !important;
     padding-top: 40px;
     font-size: 30px;
+    font-weight: 800;
 }
 
 #donator-1 .wrap-message {

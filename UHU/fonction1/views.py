@@ -30,7 +30,7 @@ def result(request):
         if temp == 'on':
             list_item.append(item)
     
-  
+
     list_bed = []
     for item in list_item:
         bed = []

@@ -32,13 +32,20 @@ def result1(request):
         list_tree[item['name']] = 0
         item_area = float(item['size'][:-1])
         sum_area += item_area
+    
+    """
+    list_tree: danh sách các loại
+    sum_area: tổng diện tích của một bộ cây
+    remain1_erea: diện tích dư
+    """
 
     if(len(list_tree) != 1):
         number_set = int(area//sum_area)
         remain1_area = area - sum_area*number_set + 0.0001
         
         list_double = {}
-
+        
+        #tính tổng diện tích của từng cặp cây 
         for i in range(len(list_item) - 1):
             for j in range(i + 1, len(list_item)):
                 temp = float(list_item[i]['size'][:-1]) + float(list_item[j]['size'][:-1])
@@ -47,10 +54,11 @@ def result1(request):
 
         list_double = {k: v for k, v in sorted(list_double.items(), key=lambda item: item[1])}
         sum_area2 = list(list_double.values())
-        number_set2 = int(remain1_area//sum_area2[0])
+        number_set2 = int(remain1_area//sum_area2[0]) #lấy cặp cây có diện tích lớn nhất rồi tính số lượng cây của cặp cây đó
 
-        remain2_area = remain1_area - number_set2*sum_area2[0]
+        remain2_area = remain1_area - number_set2*sum_area2[0] #tính diện tích dư thừa cuối cùng
 
+        #tính số lượng cây cuối cùng với số dư cuối
         temp = list(list_double.keys())
         for key in list_tree:
             number_last_tree = 0
@@ -61,9 +69,10 @@ def result1(request):
             
             for item in list_item:
                 if(key == item['name']):
-                    number_last_tree = int(remain2_area//float(item['size'][:-1]))
+                    number_last_tree = int(remain2_area//float(item['size'][:-1])) 
             list_tree[key] += number_last_tree
 
+        #tính tiền
         for item in list_item:
             for key in list_tree:
                 if(item['name'] == key):
